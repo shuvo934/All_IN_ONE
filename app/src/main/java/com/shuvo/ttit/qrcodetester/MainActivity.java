@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     Button flashSensor;
     Button spanView;
     Button imageDatabase;
+    Button treeMenu;
 
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
@@ -90,10 +91,21 @@ public class MainActivity extends AppCompatActivity {
 
         imageDatabase = findViewById(R.id.image_from_database_button);
 
-        imageDatabase.setOnClickListener(new View.OnClickListener() {
+        treeMenu = findViewById(R.id.tree_menu_2nd_button);
+
+        treeMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,TreeMenu2nd.class);
+                startActivity(intent);
+                showSystemUI();
+            }
+        });
+
+        imageDatabase.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,ImageDatabase.class);
                 startActivity(intent);
                 showSystemUI();
             }
