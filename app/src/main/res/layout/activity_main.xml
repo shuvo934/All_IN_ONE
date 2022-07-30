@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:background="@color/primaryVariant_sea_brook"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo_bhai"
+        android:gravity="center"
+        android:text="WELCOME"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/scan_qr_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="SCAN QR CODE"
+                android:background="@drawable/button_design"
+                app:backgroundTint="@null"/>
+
+            <Button
+                android:id="@+id/scan_qr_code_zxing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="Zxing SCAN CODE"
+                android:background="@drawable/button_design"
+                app:backgroundTint="@null"/>
+
+            <Button
+                android:id="@+id/scan_qr_code_bcs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="BARCODE SCANNER"
+                android:background="@drawable/button_design"
+                app:backgroundTint="@null"/>
+
+            <Button
+                android:id="@+id/scan_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="TEXT SCANNER"
+                android:background="@drawable/button_design"
+                app:backgroundTint="@null"/>
+
+            <Button
+                android:id="@+id/flash_light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="FLASH LIGHT"
+                android:background="@drawable/button_design"
+                app:backgroundTint="@null"/>
+
+            <Button
+                android:id="@+id/flash_light_with_sensor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="FLASH LIGHT SESNSOR"
+                android:background="@drawable/button_design"
+                app:backgroundTint="@null"/>
+
+            <Button
+                android:id="@+id/span_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="Span Recyclerview"
+                android:background="@drawable/button_design"
+                app:backgroundTint="@null"/>
+
+            <Button
+                android:id="@+id/image_from_database_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="Image from database"
+                android:background="@drawable/button_design"
+                app:backgroundTint="@null"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

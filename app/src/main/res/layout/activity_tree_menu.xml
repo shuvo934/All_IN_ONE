@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="start"
+    android:id="@+id/drawer_layout"
+    tools:context=".TreeMenu">
+
+    <LinearLayout
+        android:id="@+id/activity_controller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/frame_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="2dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary_naval"
+            android:padding="18dp">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/nav_icon_main_menu"
+                android:layout_centerVertical="true"
+                android:src="@drawable/menu_icon_ts"
+                app:tint="@color/white" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_toEndOf="@+id/nav_icon_main_menu"
+                android:layout_centerVertical="true"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="3dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/search_product_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:queryHint="Search Product"
+                    app:iconifiedByDefault="false"
+                    app:queryBackground="@android:color/transparent"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ExpandableListView
+        android:id="@+id/nav_list"
+        android:layout_width="235dp"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:groupIndicator="@null"
+        android:dividerHeight="0.5dp"
+        android:childDivider="@android:color/transparent"
+        android:childIndicator="@null"
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"/>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
