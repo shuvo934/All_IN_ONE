@@ -24,6 +24,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:textIsSelectable="true"
+        android:focusable="true"
+        android:longClickable="true"
+        android:enabled="true"
         android:gravity="center"
         android:textColor="@color/primaryVariant_sea_brook"
         />
